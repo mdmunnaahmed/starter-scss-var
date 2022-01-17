@@ -1,0 +1,61 @@
+.btn, .cmn--btn {
+  color: $dark;
+  padding: 12px 35px;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: $heading;
+  cursor: pointer;
+  outline: none;
+  @include transition;
+  border-radius: 10px;
+  z-index: 1;
+  border: 0;
+  @include breakpoint(max-xl) {
+      font-size: 18px;
+  }
+  &:hover {
+      color: $dark;
+  }
+  
+  &.btn--lg {
+      padding: 13px 35px !important;
+      font-size: 24px;
+      @include breakpoint(max-lg) {
+          font-size: 22px;
+      }
+      @include breakpoint(max-sm) {
+          font-size: 20px;
+      }
+  }
+  &.btn--md {
+      padding: 10px 25px !important;
+      font-size: 15px;
+  }
+  &.btn--sm {
+      padding: 5px 15px !important;
+      font-size: 14px;
+  }
+  &.btn--xs {
+      padding: 0px 10px !important;
+      font-size: 13px;
+  }
+}
+.cmn--btn {
+  position: relative;
+  overflow: hidden;
+  &::before, &::after {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      top: 0;
+      @include transition;
+  }
+  &:hover, &.active {
+      &::before {
+          top: -100%;
+      }
+  }
+}
+

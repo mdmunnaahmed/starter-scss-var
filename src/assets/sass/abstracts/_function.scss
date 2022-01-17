@@ -1,0 +1,14 @@
+// function for coverting 'px' to 'rem'
+$font-base: 16px;
+@function rem($target, $context: $font-base) {
+    @if ($target == 0) {
+        @return 0;
+    }
+    @return $target / $context + 0rem;
+}
+
+
+@function toRem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}

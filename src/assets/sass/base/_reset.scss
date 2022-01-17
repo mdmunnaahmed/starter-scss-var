@@ -1,0 +1,33 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: $fs-base;
+    color: $body-color;
+    line-height: $lh-p;
+    font-family: $body;
+    background: $body-bg;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // min-height: 100vh;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $body-color;
+    @include transition;
+    &:hover {
+        color: $base-color;
+    }
+}
+span, sub, sup {
+    display: inline-block;
+    line-height: $lh-p;
+}

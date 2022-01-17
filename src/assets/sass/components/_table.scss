@@ -1,0 +1,146 @@
+.table--responsive--md {
+    @include breakpoint(max-md) {
+        thead {
+            display: none;
+        }
+        tbody {
+            tr {
+                display: block;
+                td {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 15px;
+                    border: none;
+                    border-bottom: 1px solid $border-color;
+                    @include breakpoint(max-lg) {
+                        font-size: 14px !important;
+                    }
+                    &:last-child {
+                        border: none;
+                    }
+                    &::before {
+                        content: attr(data-label);
+                        font-family: $heading;
+                        font-size: 16px;
+                        color: $title-color;
+                        font-weight: 500;
+                        @include breakpoint(max-sm) {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.table--responsive--lg {
+    @include breakpoint(max-lg) {
+        thead {
+            display: none;
+        }
+        tbody {
+            tr {
+                display: block;
+                td {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 15px;
+                    border: none;
+                    border-bottom: 1px solid $border-color;
+                    @include breakpoint(max-lg) {
+                        font-size: 14px !important;
+                    }
+                    &:last-child {
+                        border: none;
+                    }
+                    &::before {
+                        content: attr(data-label);
+                        font-family: $heading;
+                        font-size: 16px;
+                        color: $title-color;
+                        font-weight: 500;
+                        @include breakpoint(max-sm) {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.table--responsive--xl {
+    @include breakpoint(max-xl) {
+        thead {
+            display: none;
+        }
+        tbody {
+            tr {
+                display: block;
+                td {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 15px;
+                    border: none;
+                    border-bottom: 1px solid $border-color;
+                    @include breakpoint(max-lg) {
+                        font-size: 14px !important;
+                    }
+                    &:last-child {
+                        border: none;
+                    }
+                    &::before {
+                        content: attr(data-label);
+                        font-family: $heading;
+                        font-size: 16px;
+                        color: $title-color;
+                        font-weight: 500;
+                        @include breakpoint(max-sm) {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table {
+    margin: 0;
+    border: none;
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+        tr {
+            // background: rgba($base-color,1);
+            th {
+                padding: 10px 15px;
+                font-family: $heading;
+                color: $white;
+                border: none;
+                font-size: 15px;
+                font-weight: 500;
+                border: 1px solid $border-color;
+            }
+        }
+    }
+    tbody {
+        font-size: 15px;
+        tr {
+            &:nth-child(odd) {
+                background: $section-bg;
+            }
+            td {
+                color: $white;
+                vertical-align: middle;
+                padding: 10px 15px;
+                border-width: 1px;
+                @include breakpoint(lg) {
+                    border-color: $border-color;
+                }
+            }
+        }
+    }
+}

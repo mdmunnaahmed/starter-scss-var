@@ -1,0 +1,28 @@
+.custom--modal .modal--footer,
+.custom--modal .modal--body,
+.custom--modal .modal--header {
+    border-color: $border-color;
+    background: $section-bg;
+    border-color: $border-color !important;
+}
+
+.custom--modal .modal--footer .modal-title,
+.custom--modal .modal--header .modal-title {
+    margin: 0;
+    color: $title-color;
+}
+
+.custom--modal .modal--footer .btn-close,
+.custom--modal .modal--header .btn-close {
+    background: transparent;
+    font-size: 20px;
+    line-height: 1;
+    color: $danger;
+    opacity: 1;
+}
+
+.custom--modal .modal-content {
+    border: none;
+    color: $white;
+    background: $section-bg;
+}

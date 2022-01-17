@@ -1,0 +1,22 @@
+@import './_reset';
+
+/* global css strat */
+@import './_color';
+@import './_bg';
+
+.bg_img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg_fixed {
+  background-attachment: fixed;
+}
+a.text-white {
+  &:hover {
+    color: $base-color !important;
+  }
+}
+ul {
+  list-style: none;
+}

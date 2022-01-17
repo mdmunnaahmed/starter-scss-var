@@ -1,0 +1,11 @@
+// @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) 
+//   .testimonial-section
+//     &::after 
+//       background-color: rgba($base-color-two, 0.45)
+//       backdrop-filter: blur(10px)
+//       -webkit-backdrop-filter: blur(10px)
+
+// @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) 
+//   .testimonial-section
+//     &::after 
+//       background-color: rgba($base-color-two, 0.75)
