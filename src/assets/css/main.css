@@ -21,7 +21,7 @@ a {
     display: inline-block;
     text-decoration: none;
     color: #4d4646;
-    transition: all ease .3s;
+    transition: all ease 0.3s;
 }
 
 a:hover {
@@ -231,7 +231,7 @@ h6 {
     font-family: "Josefin Sans", sans-serif;
     cursor: pointer;
     outline: none;
-    transition: all ease .3s;
+    transition: all ease 0.3s;
     border-radius: 10px;
     z-index: 1;
     border: 0;
@@ -291,7 +291,7 @@ h6 {
     width: 100%;
     z-index: -1;
     top: 0;
-    transition: all ease .3s;
+    transition: all ease 0.3s;
 }
 
 .cmn--btn:hover::before, .cmn--btn.active::before {
@@ -880,7 +880,7 @@ select.style--dark option {
     top: 0;
     width: 100%;
     z-index: 11;
-    transition: all ease .3s;
+    transition: all ease 0.3s;
     border-bottom: 1px solid transparent;
 }
 
@@ -1045,7 +1045,7 @@ select.style--dark option {
         opacity: 0;
         visibility: hidden;
         min-width: 230px;
-        transition: all ease .3s;
+        transition: all ease 0.3s;
         transform: translateY(15px);
         box-shadow: 0 3px 12px 3px rgba(39, 107, 255, 0.1);
         overflow: hidden;
@@ -1118,7 +1118,7 @@ select.style--dark option {
         transform: translateY(-100px) scaleY(0.6);
         opacity: 0;
         overflow-y: auto;
-        transition: all ease .3s;
+        transition: all ease 0.3s;
         background: #120f29;
     }
 
@@ -1197,7 +1197,7 @@ select.style--dark option {
     height: 100%;
     left: 0;
     background: #276bff;
-    transition: all ease .3s;
+    transition: all ease 0.3s;
 }
 
 .header-trigger span::after {
