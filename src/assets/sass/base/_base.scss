@@ -1,22 +1,36 @@
-@import './_reset';
+@import "./_reset";
 
 /* global css strat */
-@import './_color';
-@import './_bg';
+@import "./_color";
+@import "./_bg";
 
 .bg_img {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 .bg_fixed {
-  background-attachment: fixed;
+    background-attachment: fixed !important;
 }
 a.text-white {
-  &:hover {
-    color: $base-color !important;
-  }
+    &:hover {
+        color: $base-color !important;
+    }
 }
 ul {
-  list-style: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -999;
+    &.active {
+        z-index: 111;
+    }
 }

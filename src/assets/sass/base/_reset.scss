@@ -4,9 +4,9 @@ html {
 body {
     padding: 0;
     margin: 0;
-    font-size: $fs-base;
+    font-size: 16px;
     color: $body-color;
-    line-height: $lh-p;
+    line-height: 1.6;
     font-family: $body;
     background: $body-bg;
     // display: flex;
@@ -19,15 +19,16 @@ p {
     padding: 0;
 }
 a {
-    display: inline-block;
     text-decoration: none;
     color: $body-color;
-    @include transition;
+    @extend %transition;
     &:hover {
         color: $base-color;
     }
 }
-span, sub, sup {
+span,
+sub,
+sup,
+a {
     display: inline-block;
-    line-height: $lh-p;
 }
