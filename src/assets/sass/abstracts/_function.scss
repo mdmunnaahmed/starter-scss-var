@@ -7,8 +7,7 @@ $font-base: 16px;
     @return $target / $context + 0rem;
 }
 
-
 @function toRem($value) {
-    $remValue: ($value / 16) + rem; 
+    $remValue: ($value / 16) + rem;
     @return $remValue;
 }
