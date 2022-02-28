@@ -20,10 +20,6 @@ p {
 a {
     text-decoration: none;
     color: #4d4646;
-<<<<<<< HEAD
-=======
-    transition: all ease 0.3s;
->>>>>>> 2e190637d3957988e5ba38f6cf07d22be47f729a
 }
 
 a:hover {
@@ -117,35 +113,35 @@ a {
 
 /* background color css end */
 .theme-one {
-    color: #FF3653 !important;
+    color: #ff3653 !important;
 }
 
 .theme-one-bg {
-    background: #FF3653 !important;
+    background: #ff3653 !important;
 }
 
 .theme-two {
-    color: #18D39E !important;
+    color: #18d39e !important;
 }
 
 .theme-two-bg {
-    background: #18D39E !important;
+    background: #18d39e !important;
 }
 
 .theme-three {
-    color: #0C93D2 !important;
+    color: #0c93d2 !important;
 }
 
 .theme-three-bg {
-    background: #0C93D2 !important;
+    background: #0c93d2 !important;
 }
 
 .theme-four {
-    color: #F6A200 !important;
+    color: #f6a200 !important;
 }
 
 .theme-four-bg {
-    background: #F6A200 !important;
+    background: #f6a200 !important;
 }
 
 .bg_img {
@@ -292,10 +288,6 @@ h6 {
     font-family: "Josefin Sans", sans-serif;
     cursor: pointer;
     outline: none;
-<<<<<<< HEAD
-=======
-    transition: all ease 0.3s;
->>>>>>> 2e190637d3957988e5ba38f6cf07d22be47f729a
     border-radius: 10px;
     z-index: 1;
     border: 0;
@@ -357,21 +349,10 @@ h6 {
     color: #fff;
 }
 
-<<<<<<< HEAD
 .btn--secondary {
     background-color: #868e96;
     border: 1px solid #868e96;
     color: #fff;
-=======
-.cmn--btn::before, .cmn--btn::after {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    top: 0;
-    transition: all ease 0.3s;
->>>>>>> 2e190637d3957988e5ba38f6cf07d22be47f729a
 }
 
 .btn--success {
@@ -998,12 +979,7 @@ select.style--dark option {
     position: absolute;
     top: 0;
     width: 100%;
-<<<<<<< HEAD
     z-index: 111;
-=======
-    z-index: 11;
-    transition: all ease 0.3s;
->>>>>>> 2e190637d3957988e5ba38f6cf07d22be47f729a
     border-bottom: 1px solid transparent;
 }
 
@@ -1242,11 +1218,7 @@ select.style--dark option {
         opacity: 0;
         overflow-y: auto;
         transition: all ease 0.3s;
-<<<<<<< HEAD
         background: #7367f0;
-=======
-        background: #120f29;
->>>>>>> 2e190637d3957988e5ba38f6cf07d22be47f729a
     }
 
     .menu.active {
@@ -1324,10 +1296,6 @@ select.style--dark option {
     height: 100%;
     left: 0;
     background: #276bff;
-<<<<<<< HEAD
-=======
-    transition: all ease 0.3s;
->>>>>>> 2e190637d3957988e5ba38f6cf07d22be47f729a
 }
 
 .header-trigger span::after {
