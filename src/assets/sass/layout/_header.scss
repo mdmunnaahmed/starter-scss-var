@@ -1,18 +1,5 @@
 // Header Section Starts Here
-.header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 111;
-    @extend %transition;
-    border-bottom: 1px solid transparent;
-    &.sticky {
-        background: $section-bg;
-        position: fixed;
-        top: 0;
-        border-bottom: 1px solid rgba($base-color, 0.1);
-    }
-}
+
 .header-bottom {
     width: 100%;
     padding: 20px 0;
@@ -23,9 +10,7 @@
 .header-bottom-area {
     @extend %flex;
     justify-content: space-between;
-    @include breakpoint(max-lg) {
-        justify-content: space-between;
-    }
+    position: relative;
 }
 .logo {
     img {
@@ -100,28 +85,6 @@
             font-family: $heading;
             color: $body-color;
             position: relative;
-            .badge {
-                position: absolute;
-                font-weight: 600;
-                top: -12px;
-                right: -8px;
-                font-size: 9px;
-                color: $dark !important;
-                border-radius: 3px 3px 3px 0;
-                line-height: 0.93;
-                padding: 4px 5px 2px;
-                z-index: 1;
-                &::before {
-                    position: absolute;
-                    content: "";
-                    top: calc(100% - 1px);
-                    left: 0;
-                    background: $base-color;
-                    width: 8px;
-                    height: 5px;
-                    clip-path: polygon(0 100%, 0 0, 100% 0);
-                }
-            }
         }
     }
     .btn-close {
@@ -146,7 +109,6 @@
         overflow: hidden;
         z-index: 11;
         background: $body-bg;
-        border: 3px solid rgba($base-color, 0.6);
         padding: 10px;
         li {
             padding: 0;
@@ -177,12 +139,12 @@
             opacity: 0;
             top: 5px;
             left: -100%;
-            transform: translateY(20px);
+            transform: translateY(-20px);
         }
 
         &.has-sub-menu > a {
             &::after {
-                transform: translate(-20px, -50%);
+                transform: translateY(0px);
             }
         }
     }

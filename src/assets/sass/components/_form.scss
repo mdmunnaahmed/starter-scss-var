@@ -20,7 +20,7 @@
     padding: 12px 25px;
 }
 .form--control[readonly] {
-    background: rgba($primary, 0.05) !important;
+    background: rgba($dark, 0.05) !important;
     &:focus {
         border-color: $border-color;
     }
@@ -42,8 +42,8 @@ select {
         }
     }
 }
-.input-group > .form--control,
-.input-group > .select {
+
+.input-group > select {
     position: relative;
     flex: 1 1 auto;
     width: 1%;

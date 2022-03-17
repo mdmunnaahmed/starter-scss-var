@@ -21,10 +21,15 @@ p {
 a {
     text-decoration: none;
     color: $body-color;
-    @extend %transition;
     &:hover {
         color: $base-color;
     }
+}
+a,
+img,
+.title,
+.name {
+    @extend %transition;
 }
 span,
 sub,
