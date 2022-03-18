@@ -68,7 +68,7 @@
             display: flex;
             justify-content: space-between;
             &::after {
-                @include line-ico;
+                @extend %line-ico;
                 content: "\f107";
                 right: 0;
                 top: 50%;

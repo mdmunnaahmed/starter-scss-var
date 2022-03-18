@@ -194,6 +194,13 @@ img,
     transition: all 0.3s;
 }
 
+.menu li.has-sub-menu > a::after {
+    position: absolute;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: "Line Awesome Free";
+}
+
 h1,
 h2,
 h3,
@@ -1023,10 +1030,6 @@ select.style--dark option {
 }
 
 .menu li.has-sub-menu > a::after {
-    position: absolute;
-    font-weight: 900;
-    font-size: 16px;
-    font-family: "Line Awesome Free";
     content: "\f107";
     right: 0;
     top: 50%;
@@ -1084,7 +1087,6 @@ select.style--dark option {
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        -webkit-line-clamp: 2;
         -webkit-line-clamp: 1;
     }
 

@@ -1,24 +1,8 @@
-@mixin line-ico {
-    position: absolute;
-    font-weight: 900;
-    font-size: 16px;
-    font-family: "Line Awesome Free";
-}
-@mixin font-ico($icon) {
-    position: absolute;
-    content: "\$icon";
-    font-weight: 900;
-    font-size: 16px;
-    font-family: "Font Awesome 5 Free";
-}
-
-
 @mixin text-wrap {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
 }
 
 //   transition
@@ -132,12 +116,12 @@
 }
 
 // media query mixin
-@mixin media-min($value) {
+@mixin min($value) {
     @media (min-width: $value) {
         @content;
     }
 }
-@mixin media-max($value) {
+@mixin max($value) {
     @media (max-width: $value) {
         @content;
     }
