@@ -1,7 +1,8 @@
 # html-scss-start-pack
-new project startup package ready with sass gulp.
+new html project startup package ready with sass gulp (scss version).
+"include" facility included. :)
 
-#Let's Begin
+### Let's Begin
 
 ```
 npm install
